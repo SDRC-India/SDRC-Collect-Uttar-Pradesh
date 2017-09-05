@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1.60"
+        android:orientation="vertical" >
+        
+        <EditText
+        android:id="@+id/editTextForUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/username_hint" 
+        android:gravity="center_horizontal">
+        
+        <requestFocus />
+        </EditText>
+        
+
+    <EditText
+        android:id="@+id/editTextForPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:gravity="center_horizontal" 
+
+        
+    />
+
+    <Button
+        android:id="@+id/buttonForLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="login"
+        android:text="@string/login_button" />
+<!-- 
+    <Button
+        android:id="@+id/buttonForCngServerURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="changeServerURL"
+        android:text="@string/change_web_server_url" 
+        android:layout_marginTop="40dip"/> -->
+   
+   
+    <!-- <TextView
+        android:id="@+id/change_web_server_url_link"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dip"
+        android:textColor="#0000ff"
+        android:onClick="changeServerURL"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         /> -->
+        
+    </LinearLayout>
+
+   
+
+</LinearLayout>
